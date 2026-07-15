@@ -127,6 +127,7 @@ import static org.apache.kafka.raft.RaftUtil.hasValidTopicPartition;
 import static org.apache.kafka.snapshot.Snapshots.BOOTSTRAP_SNAPSHOT_ID;
 
 /**
+ *
  * This class implements a Kafkaesque version of the Raft protocol. Leader election
  * is more or less pure Raft, but replication is driven by replica fetching and we use Kafka's
  * log reconciliation protocol to truncate the log to a common point following each leader
